@@ -11,12 +11,12 @@ A simple stylized sky, day/night cycle controller, clouds, and other atmospheric
 - [Results](#results)
 - [Progress](#progress)
 
-<a name=setup/>
+<a name=setup></a>
 ## Setup
 
 wip
 
-<a name=results/>)
+<a name=results></a>
 ## Results
 
 <!-- https://imgur.com/a/j80ajxR -->
@@ -29,7 +29,7 @@ wip
 
 ![dusk](https://i.imgur.com/RbA2w7U.png)
 
-<a name=progress/>)
+<a name=progress></a>
 ## Progress
 
 #### Done
