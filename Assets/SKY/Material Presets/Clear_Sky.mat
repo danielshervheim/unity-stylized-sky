@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: "\uF010Procedural Sky Dusk"
+  m_Name: Clear_Sky
   m_Shader: {fileID: 4800000, guid: a73abf6ece1fd4f19a283aadd5d4fa18, type: 3}
   m_ShaderKeywords: _HORIZONLINEBLENDMODE_LERP _SUNHALOBLENDMODE_ADD _VIEW_FINAL
   m_LightmapFlags: 0
@@ -21,21 +21,21 @@ Material:
     m_Floats:
     - _HorizonLineBlendMode: 1
     - _HorizonLineContribution: 1
-    - _HorizonLineExponent: 5
-    - _SkyGradientExponent: 0.25
+    - _HorizonLineExponent: 3.5
+    - _SkyGradientExponent: 0.5
     - _SunDiscContribution: 1
-    - _SunDiscExponent: 100000
-    - _SunDiscExponentSize: 12000
+    - _SunDiscExponent: 500000
+    - _SunDiscExponentSize: 5000
     - _SunDiscMultiplier: 100000
-    - _SunDiscMultiplierSharpness: 1200
+    - _SunDiscMultiplierSharpness: 1
     - _SunHaloBlendMode: 0
     - _SunHaloContribution: 1
-    - _SunHaloExponent: 750
+    - _SunHaloExponent: 100
     - _View: 0
     - __dirty: 0
     m_Colors:
-    - _HorizonLineColor: {r: 0.854902, g: 0.77647066, b: 0.84705883, a: 0.8509804}
-    - _SkyGradientBottom: {r: 0.6862745, g: 0.53333336, b: 0.6862745, a: 1}
-    - _SkyGradientTop: {r: 0.0744927, g: 0.12796462, b: 0.5849056, a: 1}
-    - _SunDiscColor: {r: 1, g: 0.94117653, b: 0.8705883, a: 1}
-    - _SunHaloColor: {r: 1, g: 0.78745264, b: 0.09905652, a: 1}
+    - _HorizonLineColor: {r: 0.25735295, g: 0.25359446, b: 0.22329153, a: 1}
+    - _SkyGradientBottom: {r: 0.7980598, g: 0.86884236, b: 0.9245283, a: 1}
+    - _SkyGradientTop: {r: 0.07756319, g: 0.49110618, b: 0.7830189, a: 1}
+    - _SunDiscColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SunHaloColor: {r: 0.9811321, g: 0.9617689, b: 0.91171235, a: 0.566}

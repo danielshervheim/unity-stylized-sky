@@ -24,8 +24,6 @@ public class SkyShaderGUI : ShaderGUI  {
 	bool FirstTimeApply = true;
 
     public override void OnGUI (MaterialEditor materialEditor, MaterialProperty[] properties) {
-        //base.OnGUI (materialEditor, properties);
-
         Material material = materialEditor.target as Material;
 
         if (FirstTimeApply) {

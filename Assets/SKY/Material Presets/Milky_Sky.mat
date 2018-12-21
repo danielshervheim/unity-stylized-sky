@@ -6,9 +6,9 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Procedural Sky Dawn
+  m_Name: Milky_Sky
   m_Shader: {fileID: 4800000, guid: a73abf6ece1fd4f19a283aadd5d4fa18, type: 3}
-  m_ShaderKeywords: _HORIZONLINEBLENDMODE_LERP _SUNHALOBLENDMODE_ADD _VIEW_FINAL
+  m_ShaderKeywords: _HORIZONLINEBLENDMODE_ADD _SUNHALOBLENDMODE_ADD _VIEW_FINAL
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -19,23 +19,23 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - _HorizonLineBlendMode: 1
+    - _HorizonLineBlendMode: 0
     - _HorizonLineContribution: 1
-    - _HorizonLineExponent: 3.5
-    - _SkyGradientExponent: 0.5
+    - _HorizonLineExponent: 1
+    - _SkyGradientExponent: 1
     - _SunDiscContribution: 1
-    - _SunDiscExponent: 500000
-    - _SunDiscExponentSize: 5000
+    - _SunDiscExponent: 100000
+    - _SunDiscExponentSize: 100000
     - _SunDiscMultiplier: 100000
-    - _SunDiscMultiplierSharpness: 1
+    - _SunDiscMultiplierSharpness: 100000
     - _SunHaloBlendMode: 0
     - _SunHaloContribution: 1
     - _SunHaloExponent: 100
     - _View: 0
     - __dirty: 0
     m_Colors:
-    - _HorizonLineColor: {r: 0.25735295, g: 0.25359446, b: 0.22329153, a: 1}
-    - _SkyGradientBottom: {r: 0.7980598, g: 0.86884236, b: 0.9245283, a: 1}
-    - _SkyGradientTop: {r: 0.07756319, g: 0.49110618, b: 0.7830189, a: 1}
+    - _HorizonLineColor: {r: 0, g: 0, b: 0, a: 0}
+    - _SkyGradientBottom: {r: 0.9294118, g: 0.9176471, b: 0.89019614, a: 1}
+    - _SkyGradientTop: {r: 0.9058824, g: 0.87843144, b: 0.8078432, a: 1}
     - _SunDiscColor: {r: 1, g: 1, b: 1, a: 1}
-    - _SunHaloColor: {r: 0.9811321, g: 0.9617689, b: 0.91171235, a: 0.566}
+    - _SunHaloColor: {r: 0.7735849, g: 0.69111997, b: 0.62397647, a: 0}
