@@ -7,17 +7,19 @@ using System;
 public class DayManagerPreset {
 
 	public String label_;
-	public Material skyMaterial_;
-	public Material cloudMaterial_;
-	public float start_;
-	public float end_;
+	public Material sky_;
+	public Material cloud_;
+	[Vector2Range(0f, 1f)]
+	public Vector2 range_;
 	public bool visible_ = false;
 
-	public DayManagerPreset(int i) {
+	public DayManagerPreset(int i, int numPresets) {
 		label_ = "Element " + i;
-	}
 
-	public DayManagerPreset(String label) {
-		label_ = label;
+		float delta = 1f / numPresets;
+		range_.x = i * delta;
+		range_.y = (i+1) * delta;
+
+		visible_ = false;
 	}
 }

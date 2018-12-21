@@ -17,7 +17,8 @@ public class DayManager : MonoBehaviour {
 	public bool pauseTime_ = true;
 	public float currentTimeNormalized_ = 0f;  // should be read-only
 
-	public DayManagerPreset[] presets;
+	public int numPresets_ = 0;
+	public DayManagerPreset[] presets_;
 
 	void Start () {
 		sun_.rotation = Quaternion.identity;
