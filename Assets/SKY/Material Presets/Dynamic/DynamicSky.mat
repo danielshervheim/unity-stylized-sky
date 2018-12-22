@@ -62,29 +62,29 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _HorizonLineContribution: 0.121
-    - _HorizonLineExponent: 12.3
+    - _HorizonLineContribution: 0.4
+    - _HorizonLineExponent: 5.75
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _SkyGradientExponent: 0.75
+    - _SkyGradientExponent: 0.1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SunDiscContribution: 1
-    - _SunDiscExponent: 250000
-    - _SunDiscMultiplier: 500
-    - _SunHaloContribution: 0.573
-    - _SunHaloExponent: 500
+    - _SunDiscExponent: 500000
+    - _SunDiscMultiplier: 100000
+    - _SunHaloContribution: 0.75
+    - _SunHaloExponent: 750
     - _UVSec: 0
     - _ZWrite: 1
     - __dirty: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _HorizonLineColor: {r: 0.49729663, g: 0.9264706, b: 0.85543495, a: 0}
-    - _SkyGradientBottom: {r: 0.1268382, g: 0.31338736, b: 0.37499997, a: 0}
-    - _SkyGradientTop: {r: 0.027897932, g: 0.049892776, b: 0.08823528, a: 0}
+    - _HorizonLineColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SkyGradientBottom: {r: 0.4676485, g: 0.8453282, b: 0.8773585, a: 1}
+    - _SkyGradientTop: {r: 0, g: 0.5633725, b: 0.8113207, a: 1}
     - _SunDiscColor: {r: 1, g: 1, b: 1, a: 1}
-    - _SunHaloColor: {r: 0.047577806, g: 0.8088235, b: 0.7143241, a: 1}
+    - _SunHaloColor: {r: 0.9117647, g: 0.8648356, b: 0.77097744, a: 1}

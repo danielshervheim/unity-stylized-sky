@@ -9,8 +9,7 @@ public class DayManagerPreset {
 	public String label;
 	public Material sky;
 	public Material cloud;
-	[Vector2Range("Time", 0f, 1f)]
-	public Vector2 range;
+	public FloatRange range;
 
 	public void SetPresetBlend(DayManagerPreset other, float t, ref Material skyMat, ref Material cloudMat) {
 		if (t < 0 || t > 1) {

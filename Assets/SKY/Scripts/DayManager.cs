@@ -1,19 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class DayManager : MonoBehaviour {
+
+	[Space]
+	[Title("☀️ Day Manager")]
+
+	[Header("Sun Settings")]
 	public Transform sun;
 	public float sunYaw = 0f;
 	private float sunPitch = 0f;
-
-	public Material sky;
-	public Material cloud;
 	
+	[Header("Day Settings")]
 	public float dayDuration = 24;  // in minutes
 	public bool pauseTime = true;
-	public float currentTimeNormalized = 0f;  // should be read-only
+	[ReadOnly] public float currentTimeNormalized = 0f;  // should be read-only
 
+	[Header("Materials")]
+	public Material sky;
+	public Material cloud;
+
+	[Header("Presets")]
 	public DayManagerPreset[] presets;
 
 	void Start () {
@@ -31,12 +40,12 @@ public class DayManager : MonoBehaviour {
 
 		for (int i = 0; i < presets.Length; i++) {
 			int nextI = (i+1) % presets.Length;
-			if (currentTimeNormalized <= presets[i].range.y) {
+			if (currentTimeNormalized <= presets[i].range.end) {
 				presets[i].SetPreset(ref sky, ref cloud);
 				break;
 			}
-			else if (currentTimeNormalized < presets[nextI].range.x) {
-				float x = (currentTimeNormalized - presets[i].range.y) / (presets[nextI].range.x - presets[i].range.y);
+			else if (currentTimeNormalized < presets[nextI].range.start) {
+				float x = (currentTimeNormalized - presets[i].range.end) / (presets[nextI].range.start - presets[i].range.end);
 				presets[i].SetPresetBlend(presets[nextI], x, ref sky, ref cloud);
 				break;	
 			}
