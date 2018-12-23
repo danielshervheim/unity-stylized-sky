@@ -7,7 +7,6 @@ A simple stylized sky, day/night cycle controller, clouds, and other atmospheric
 
 - [Screenshots](#screenshots)
 - [Setup](#setup)
-- [Progress](#progress)
 
 <a name=screenshots></a>
 ## Screenshots
@@ -25,19 +24,4 @@ A simple stylized sky, day/night cycle controller, clouds, and other atmospheric
 <a name=setup></a>
 ## Setup
 
-wip
-
-<a name=progress></a>
-## Progress
-
-#### Done
-
-- wip
-- wip
-- wip
-
-#### Todo
-
-- wip
-- wip
-- wip
+**Dec 22nd, 2018**: Coming soon! This project is still under heavy development. I hope to have a stable release very soon!
