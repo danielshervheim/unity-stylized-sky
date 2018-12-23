@@ -73,15 +73,25 @@ public class DayManagerPreset {
 
 		cloudMat.SetColor("_ShadowColor",
 			Color.Lerp(cloud.GetColor("_ShadowColor"), other.cloud.GetColor("_ShadowColor"), t));
+	
+		cloudMat.SetFloat("_LitContribution",
+			Mathf.Lerp(cloud.GetFloat("_LitContribution"), other.cloud.GetFloat("_LitContribution"), t));
 
 		cloudMat.SetColor("_LitColor",
 			Color.Lerp(cloud.GetColor("_LitColor"), other.cloud.GetColor("_LitColor"), t));
 
+		cloudMat.SetFloat("_SSSContribution",
+			Mathf.Lerp(cloud.GetFloat("_SSSContribution"), other.cloud.GetFloat("_SSSContribution"), t));
+
 		cloudMat.SetColor("_SSSColor",
 			Color.Lerp(cloud.GetColor("_SSSColor"), other.cloud.GetColor("_SSSColor"), t));
-		
-		cloudMat.SetVector("_SSS",
-			Vector3.Lerp(cloud.GetVector("_SSS"), other.cloud.GetVector("_SSS"), t));
+
+		cloudMat.SetFloat("_SSSMultiplier",
+			Mathf.Lerp(cloud.GetFloat("_SSSMultiplier"), other.cloud.GetFloat("_SSSMultiplier"), t));
+
+		cloudMat.SetFloat("_SSSExponent",
+			Mathf.Lerp(cloud.GetFloat("_SSSExponent"), other.cloud.GetFloat("_SSSExponent"), t));
+
 	}
 
 	public void SetPreset(ref Material skyMat, ref Material cloudMat) {
@@ -137,14 +147,14 @@ public class DayManagerPreset {
 
 		// set cloud material values
 		cloudMat.SetFloat("_ShadowMultiplier", cloud.GetFloat("_ShadowMultiplier"));
-
 		cloudMat.SetColor("_ShadowColor", cloud.GetColor("_ShadowColor"));
 
+		cloudMat.SetFloat("_LitContribution", cloud.GetFloat("_LitContribution"));
 		cloudMat.SetColor("_LitColor", cloud.GetColor("_LitColor"));
-
-		cloudMat.SetColor("_SSSColor", cloud.GetColor("_SSSColor"));
 		
-		cloudMat.SetVector("_SSS", cloud.GetVector("_SSS"));
+		cloudMat.SetFloat("_SSSContribution", cloud.GetFloat("_SSSContribution"));
+		cloudMat.SetColor("_SSSColor", cloud.GetColor("_SSSColor"));
+		cloudMat.SetFloat("_SSSMultiplier", cloud.GetFloat("_SSSMultiplier"));
+		cloudMat.SetFloat("_SSSExponent", cloud.GetFloat("_SSSExponent"));
 	}
-
 }
