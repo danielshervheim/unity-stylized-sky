@@ -68,21 +68,23 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _SSSContribution: 1
-    - _SSSExponent: 15
-    - _SSSMultiplier: 0.05
-    - _ShadowMultiplier: 6
+    - _SSSContribution: 0.7147686
+    - _SSSExponent: 13.322168
+    - _SSSMultiplier: 0.066778325
+    - _ShadowMultiplier: 4.8255177
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SunlightContribution: 1
+    - _Title: 0
     - _UVSec: 0
     - _ZWrite: 1
     - __dirty: 0
+    - _header1: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _LitColor: {r: 0.8235294, g: 0.9488843, b: 1, a: 0}
+    - _LitColor: {r: 0.86300784, g: 0.8069623, b: 0.8409253, a: 0}
     - _SSS: {r: 0, g: 0, b: 0, a: 0}
-    - _SSSColor: {r: 1, g: 1, b: 1, a: 0}
-    - _ShadowColor: {r: 0.58088225, g: 0.80982673, b: 1, a: 0}
+    - _SSSColor: {r: 1, g: 0.93737906, b: 0.77299917, a: 0}
+    - _ShadowColor: {r: 0.51294214, g: 0.6584707, b: 0.8716952, a: 0}
