@@ -1,7 +1,11 @@
 *This readme is a wip. bear with me!*
 
-# Stylized-Sky-in-Unity
-A simple stylized sky, day/night cycle controller, clouds, and other atmospheric effects package for Unity.
+# Stylized-Enviroment-in-Unity
+This project includes a variety of shaders, scripts, and materials for rendering stylized enviroments in Unity.
+
+- Shaders for rendering stylized **skies**, **clouds**, **sand**, and **water**.
+- Material presets demonstrating the above shaders.
+- A time of day manager to blend between any number of the above materials depending on the sun rotation.
 
 ## Contents
 
@@ -10,6 +14,9 @@ A simple stylized sky, day/night cycle controller, clouds, and other atmospheric
 
 <a name=screenshots></a>
 ## Screenshots
+
+
+#### Sky & cloud materials
 
 <!-- https://imgur.com/a/j80ajxR -->
 
@@ -21,7 +28,19 @@ A simple stylized sky, day/night cycle controller, clouds, and other atmospheric
 
 ![dusk](https://i.imgur.com/RbA2w7U.png)
 
+#### Sand materials
+
+coming soon!
+
+#### Water materials
+
+coming soon!
+
 <a name=setup></a>
 ## Setup
 
-**Dec 22nd, 2018**: Coming soon! This project is still under heavy development. I hope to have a stable release very soon!
+coming soon!
+
+**Dec 24th, 2018**
+- Done: Time of Day, Sky, Cloud
+- Todo: Sand, Water

@@ -13,8 +13,6 @@ public class TimeOfDayPreset {
 	public Color sunLightColor;
 
 	[Header("Fog Settings")]
-	public bool fog;
-	public FogMode fogMode;
 	public float fogDensity;
 	public float fogStartDistance;
 	public float fogEndDistance;

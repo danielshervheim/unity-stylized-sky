@@ -15,6 +15,10 @@ public class TimeOfDay : MonoBehaviour {
 	public bool pauseTime = true;
 	[ReadOnly] public float currentTimeNormalized = 0f;  // should be read-only
 
+	[Header("Fog Settings")]
+	public bool fog;
+	public FogMode fogMode = FogMode.Exponential;
+
 	[Header("Materials")]
 	public Material sky;
 	public Material cloud;
@@ -24,10 +28,10 @@ public class TimeOfDay : MonoBehaviour {
 
 	void Start () {
 		sun.rotation = Quaternion.identity;
-
-		// set the sun source and sky material (just in case its not been done yet)...
 		RenderSettings.skybox = sky;
 		RenderSettings.sun = sun.GetComponent<Light>();
+		RenderSettings.fog = fog;
+		RenderSettings.fogMode = fogMode;
 	}
 	
 	void Update () {
@@ -57,14 +61,26 @@ public class TimeOfDay : MonoBehaviour {
 	private void ApplyPreset(TimeOfDayPreset p) {
 		sky.Lerp(p.sky, p.sky, 0.0f);
 		cloud.Lerp(p.cloud, p.cloud, 0.0f);
-
-		// set additional TimeOfDayPreset properties here
+		RenderSettings.sun.color = p.sunLightColor;
+		
+		if (RenderSettings.fog) {
+			RenderSettings.fogDensity = p.fogDensity;
+			RenderSettings.fogStartDistance = p.fogStartDistance;
+			RenderSettings.fogEndDistance = p.fogEndDistance;
+			RenderSettings.fogColor = p.fogColor;
+		}
 	}
 
 	private void ApplyPresetBlend(TimeOfDayPreset a, TimeOfDayPreset b, float t) {
 		sky.Lerp(a.sky, b.sky, t);
 		cloud.Lerp(a.cloud, b.cloud, t);
-
-		// set additional TimeOfDayPreset properties here
+		RenderSettings.sun.color = Color.Lerp(a.sunLightColor, b.sunLightColor, t);
+		
+		if (RenderSettings.fog) {
+			RenderSettings.fogDensity = Mathf.Lerp(a.fogDensity, b.fogDensity, t);
+			RenderSettings.fogStartDistance = Mathf.Lerp(a.fogStartDistance, b.fogStartDistance, t);
+			RenderSettings.fogEndDistance = Mathf.Lerp(a.fogEndDistance, b.fogEndDistance, t);
+			RenderSettings.fogColor = Color.Lerp(a.fogColor, b.fogColor, t);
+		}
 	}
 }

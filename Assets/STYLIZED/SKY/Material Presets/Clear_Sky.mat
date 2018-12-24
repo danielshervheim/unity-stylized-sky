@@ -31,11 +31,12 @@ Material:
     - _SunHaloBlendMode: 0
     - _SunHaloContribution: 1
     - _SunHaloExponent: 100
+    - _Title: 0
     - _View: 0
     - __dirty: 0
     m_Colors:
-    - _HorizonLineColor: {r: 0.25735295, g: 0.25359446, b: 0.22329153, a: 1}
+    - _HorizonLineColor: {r: 0.25735292, g: 0.25359443, b: 0.22329149, a: 1}
     - _SkyGradientBottom: {r: 0.7980598, g: 0.86884236, b: 0.9245283, a: 1}
-    - _SkyGradientTop: {r: 0.07756319, g: 0.49110618, b: 0.7830189, a: 1}
+    - _SkyGradientTop: {r: 0.077563174, g: 0.49110615, b: 0.7830188, a: 1}
     - _SunDiscColor: {r: 1, g: 1, b: 1, a: 1}
     - _SunHaloColor: {r: 0.9811321, g: 0.9617689, b: 0.91171235, a: 0.566}
