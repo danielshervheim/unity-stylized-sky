@@ -27,7 +27,7 @@ Material:
     - _Float2: 5
     - _HaloBlendMode: 0
     - _HorizonLineBlendMode: 0
-    - _HorizonLineContribution: 0.4
+    - _HorizonLineContribution: 0.3
     - _HorizonLineExponent: 5.75
     - _SkyGradientExponent: 0.1
     - _Skyexp: 10.99
@@ -37,8 +37,8 @@ Material:
     - _SunDiscMultiplier: 100000
     - _SunDiscMultiplierSharpness: 1000
     - _SunHaloBlendMode: 0
-    - _SunHaloContribution: 0.75
-    - _SunHaloExponent: 750
+    - _SunHaloContribution: 0.25
+    - _SunHaloExponent: 500
     - _Sunexp: 2000
     - _View: 0
     - __dirty: 0
