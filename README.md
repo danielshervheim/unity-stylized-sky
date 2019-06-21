@@ -2,9 +2,16 @@
 
 ![all](https://imgur.com/XEnwY1X.png)
 
-## How to Use
-- Open the light settings window (Window > Rendering > Lighting Settings).
-- Drag any of the stylized sky materials into the "Skybox Material" slot under the "Environment" dropdown.
+See them all in more detail [here](https://imgur.com/a/aB5B7Zz).
+
+## To Install
+
+Download the [.unitypackage](https://drive.google.com/open?id=1Qc0tf0EiDyUaPCWwh9_ZGF7NBFhNGfrr), or clone this repository.
+
+## To Use
+
+- Open the light settings window (`Window > Rendering > Lighting Settings`).
+- Drag any of the stylized sky materials from `Stylized Sky/Materials` into the "Skybox Material" slot under the "Environment" dropdown.
 
 ## Options
 
