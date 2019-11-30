@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Day6
-  m_Shader: {fileID: 4800000, guid: 5674c98f0e6c6e24aabcd3db23bbc823, type: 3}
+  m_Shader: {fileID: 4800000, guid: eb3c6fb598ded4c71b8968e1c40a3b4d, type: 3}
   m_ShaderKeywords: _DEBUG_FINAL _HALOBLENDMODE_ADD _HORIZONLINEBLENDMODE_ADD _SUNHALOBLENDMODE_ADD
     _VIEW_FINAL _VIEW_SKY _VIEW_SKYBACKGROUND
   m_LightmapFlags: 0
