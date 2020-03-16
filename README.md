@@ -6,7 +6,7 @@ See them all in more detail [here](https://imgur.com/a/aB5B7Zz).
 
 ## To Install
 
-Download the [.unitypackage](https://drive.google.com/open?id=1Qc0tf0EiDyUaPCWwh9_ZGF7NBFhNGfrr), or clone this repository.
+Download the [.unitypackage](https://github.com/danielshervheim/Stylized-Sky/releases/download/v2.0/stylized_sky_2.0.unitypackage), or clone this repository.
 
 ## To Use
 
