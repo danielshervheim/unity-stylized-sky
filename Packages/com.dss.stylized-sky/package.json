@@ -1,0 +1,23 @@
+{
+  "author": {
+    "name": "Daniel Shervheim",
+    "email": "danielshervheim@gmail.com",
+    "url": "https://www.danielshervheim.com/"
+  },
+  "description": "A stylized procedural sky shader for Unity SRP and URP.",
+  "displayName": "Stylized Sky",
+  "keywords": [
+    "unity",
+    "shader",
+    "material",
+    "sky",
+    "stylized",
+    "procedural"
+  ],
+  "license": "BSD-3-Clause",
+  "name": "com.dss.stylized-sky",
+  "repository": "github:danielshervheim/Stylized-Sky",
+  "unity": "2018.1",
+  "version": "1.0.0",
+  "hideInEditor": false
+}
