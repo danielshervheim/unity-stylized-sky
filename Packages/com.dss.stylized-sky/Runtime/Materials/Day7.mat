@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Day7
-  m_Shader: {fileID: 4800000, guid: c9d16e16a9c004b03bab003b17547c11, type: 3}
+  m_Shader: {fileID: 4800000, guid: b21d8637fe0c945c08317811bca9acdc, type: 3}
   m_ShaderKeywords: _HORIZONLINEBLENDMODE_ADD _SUNHALOBLENDMODE_ADD _VIEW_FINAL
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -20,6 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
+    - _DebugMode: 0
     - _HorizonLineBlendMode: 0
     - _HorizonLineContribution: 0
     - _HorizonLineExponent: 1
@@ -40,3 +41,4 @@ Material:
     - _SkyGradientTop: {r: 0.90196085, g: 0.78823537, b: 0.58431375, a: 1}
     - _SunDiscColor: {r: 1, g: 1, b: 1, a: 1}
     - _SunHaloColor: {r: 0.7735849, g: 0.69111997, b: 0.62397647, a: 0}
+  m_BuildTextureStacks: []

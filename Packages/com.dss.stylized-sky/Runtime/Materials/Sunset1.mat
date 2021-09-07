@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Sunset1
-  m_Shader: {fileID: 4800000, guid: c9d16e16a9c004b03bab003b17547c11, type: 3}
+  m_Shader: {fileID: 4800000, guid: b21d8637fe0c945c08317811bca9acdc, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -20,6 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
+    - _DebugMode: 0
     - _HorizonLineContribution: 1
     - _HorizonLineExponent: 7.53
     - _SkyGradientExponent: 8.32
@@ -36,3 +37,4 @@ Material:
     - _SkyGradientTop: {r: 0.12941177, g: 0.10980393, b: 0.20000002, a: 0}
     - _SunDiscColor: {r: 1, g: 0.953854, b: 0.3308823, a: 1}
     - _SunHaloColor: {r: 1, g: 0.6735294, b: 0.18382353, a: 1}
+  m_BuildTextureStacks: []

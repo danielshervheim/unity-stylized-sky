@@ -1,5 +1,5 @@
-#ifndef STYLIZED_SKY
-#define STYLIZED_SKY
+#ifndef DSS_SKY_COMMON_HLSL_
+#define DSS_SKY_COMMON_HLSL_
 
 // ---------- //
 // PROPERTIES //
@@ -21,13 +21,21 @@ half3 _SkyGradientTop;
 half3 _SkyGradientBottom;
 half _SkyGradientExponent;
 
-// ------- //
-// METHODS //
-// ------- //
+uint _DebugMode;
+
+// --------- //
+// FUNCTIONS //
+// --------- //
 
 // @brief Computes the masks used to color different parts of the sky.
-void ComputeMasks(half3 view, half3 sun, out half sunDisc, out half sunHalo, out half horizon, out half gradient)
+void ComputeSkyMasks(half3 view, half3 sun, out half sunDisc, out half sunHalo, out half horizon, out half gradient)
 {
+    // Initialize.
+    sunDisc = 0;
+    sunHalo = 0;
+    horizon = 0;
+    gradient = 0;
+
     // Compute dot product "base" masks.
     half dotViewUp = dot(view, half3(0,1,0));
     half dotViewSun = saturate(dot(view, sun));
@@ -43,7 +51,7 @@ void ComputeMasks(half3 view, half3 sun, out half sunDisc, out half sunHalo, out
     sunHalo = saturate(bellCurve * horizonSoften);
 
     // Compute horizon mask.
-    horizon = 1.0 - abs(dotViewUp);
+    horizon = saturate(1.0 - abs(dotViewUp));
     horizon = pow(horizon, _HorizonLineExponent);
     horizon = saturate(horizon);
 
@@ -54,11 +62,11 @@ void ComputeMasks(half3 view, half3 sun, out half sunDisc, out half sunHalo, out
 }
 
 // @brief Computes the sky color for the given view and sun direction.
-half3 ComputeColor(half3 viewDirWS, half3 sunDirWS)
+half3 ComputeSkyColor(half3 viewDirWS, half3 sunDirWS)
 {
     // Compute the masks.
     half maskSunDisc, maskSunHalo, maskHorizon, maskGradient;
-    ComputeMasks(viewDirWS, sunDirWS, maskSunDisc, maskSunHalo, maskHorizon, maskGradient);
+    ComputeSkyMasks(viewDirWS, sunDirWS, maskSunDisc, maskSunHalo, maskHorizon, maskGradient);
 
     // Compute base sky color.
     half3 finalColor = lerp(_SkyGradientTop, _SkyGradientBottom, maskGradient);
@@ -72,8 +80,19 @@ half3 ComputeColor(half3 viewDirWS, half3 sunDirWS)
     // Incorperate sun disc.
     finalColor = lerp(finalColor, _SunDiscColor, maskSunDisc);
 
-    // Return final computed color.
-    return finalColor;
+    switch (_DebugMode)
+    {
+        case 1:
+            return maskGradient;
+        case 2:
+            return maskHorizon;
+        case 3:
+            return maskSunHalo;
+        case 4:
+            return maskSunDisc;
+        default:
+            return finalColor;
+    }
 }
 
-#endif  // STYLIZED_SKY
+#endif  // DSS_SKY_COMMON_HLSL_

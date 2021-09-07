@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Day6
-  m_Shader: {fileID: 4800000, guid: c9d16e16a9c004b03bab003b17547c11, type: 3}
+  m_Shader: {fileID: 4800000, guid: b21d8637fe0c945c08317811bca9acdc, type: 3}
   m_ShaderKeywords: _DEBUG_FINAL _HALOBLENDMODE_ADD _HORIZONLINEBLENDMODE_ADD _SUNHALOBLENDMODE_ADD
     _VIEW_FINAL _VIEW_SKY _VIEW_SKYBACKGROUND
   m_LightmapFlags: 0
@@ -22,6 +22,7 @@ Material:
     m_TexEnvs: []
     m_Floats:
     - _DEBUG: 0
+    - _DebugMode: 0
     - _Float0: 40
     - _Float1: 0.23
     - _Float2: 5
@@ -54,3 +55,4 @@ Material:
     - _SunDiscColor: {r: 1, g: 1, b: 1, a: 1}
     - _SunHaloColor: {r: 0.9117647, g: 0.8648356, b: 0.7709775, a: 1}
     - _Sunhalocolor: {r: 1, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

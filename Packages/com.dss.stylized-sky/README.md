@@ -25,7 +25,8 @@ To the `scopedRegistries` section:
 To the `dependencies` section:
 
 ```
-"com.dss.stylized-sky": "1.0.0"
+"com.dss.core-utils": "1.6.2",
+"com.dss.stylized-sky": "1.1.1",
 ```
 
 After changes, the manifest file should look like below:
@@ -40,7 +41,8 @@ After changes, the manifest file should look like below:
     }
   ],
   "dependencies": {
-    "com.dss.stylized-sky": "1.0.0",
+    "com.dss.core-utils": "1.6.2",
+    "com.dss.stylized-sky": "1.1.1",
     ...
 ```
 
@@ -51,7 +53,7 @@ After changes, the manifest file should look like below:
 
 ## 3. Compatability
 
-Tested on Unity 2019.4 LTS in the standard (SRP) and universal (URP) render pipelines.
+Tested on Unity 2020.3.16f1 LTS in the universal (URP) render pipeline.
 
 ## 4. Options
 

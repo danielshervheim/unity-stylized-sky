@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Night2
-  m_Shader: {fileID: 4800000, guid: c9d16e16a9c004b03bab003b17547c11, type: 3}
+  m_Shader: {fileID: 4800000, guid: b21d8637fe0c945c08317811bca9acdc, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -20,6 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
+    - _DebugMode: 0
     - _HorizonLineContribution: 0.75
     - _HorizonLineExponent: 4
     - _SkyGradientExponent: 2.5
@@ -36,3 +37,4 @@ Material:
     - _SkyGradientTop: {r: 0.17254902, g: 0.27058825, b: 0.43137258, a: 1}
     - _SunDiscColor: {r: 0.75, g: 0.8551724, b: 1, a: 1}
     - _SunHaloColor: {r: 0.6985294, g: 0.60094076, b: 0.65545577, a: 1}
+  m_BuildTextureStacks: []
