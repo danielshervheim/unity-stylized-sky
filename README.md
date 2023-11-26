@@ -2,9 +2,9 @@
 
 A procedural stylized skybox shader for Unity.
 
-![all](https://imgur.com/XEnwY1X.png)
+![all](img/XEnwY1X.png)
 
-See them all in more detail [here](https://imgur.com/a/aB5B7Zz).
+See them all in more detail [here](img/a/aB5B7Zz).
 
 ## 1. How To Install
 
@@ -58,13 +58,13 @@ Tested on Unity 2020.3.16f1 LTS in the universal (URP) render pipeline.
 ## 4. Options
 
 **Sun Disc**
-![sun disc](https://imgur.com/ypSPybi.png)
+![sun disc](img/ypSPybi.png)
 
 **Sun Halo**
-![sun halo](https://imgur.com/fEhTnFO.png)
+![sun halo](img/fEhTnFO.png)
 
 **Horizon Line**
-![horizon line](https://imgur.com/bdgcKMG.png)
+![horizon line](img/bdgcKMG.png)
 
 **Sky Gradient**
-![sky gradient](https://imgur.com/O9nVMrW.png)
+![sky gradient](img/O9nVMrW.png)
